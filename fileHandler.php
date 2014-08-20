@@ -1,14 +1,12 @@
 <?php
 
 class FileHandler{
-
-	private $db;
+	
 	private $path;
 	protected static $instance = null;		
 
 	protected  function __construct(){
-
-		$this->db = DbConnect::getInstance();  
+		
 		// path to admin/
 		$this_dir = dirname(__FILE__);
 
